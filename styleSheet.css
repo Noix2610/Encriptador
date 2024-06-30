@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-primario: #F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terciario: #D8DFE8;
+    /* --color-hover: #272727; */
+
+    --fuente-inter: 'Inter', sans-serif;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.presentacion {
+    padding: 1%;
+    background-color: var(--color-primario);
+    height: 100vh;
+    /* Ocupa el 100% de la altura de la pantalla */
+    width: 100vw;
+    /* Ocupa el 100% del ancho de la pantalla */
+    display: flex;
+}
+
+.presentacion__contenido {
+    width: 100%;
+    height: 100%;
+}
+
+.output {
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: solid #000000 8px;
+    width: 450px;
+    height: 100%;
+    margin-right: 3%;
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    
+    
+}
+
+.copy button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    border: solid 1px var(--color-secundario);
+    
+
+}
+
+.texto__encriptador {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 10% 0 0 25%;
+    /* Eliminamos el borde */
+    padding: 10px;
+    /* Evita que se pueda redimensionar */
+    background-color: var(--color-primario);
+    /* Fondo blanco */
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    /* Tamaño de la fuente */
+    outline: none;
+    color: var(--color-secundario);
+}
+
+input::placeholder {
+    color: var(--color-secundario);
+}
+
+.encriptador {
+    /* Ajusta este valor según sea necesario */
+    padding-top: 10px;
+    margin-left: 20%;
+    display: flex;
+    gap: 40px;
+}
+
+.encriptador button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--color-terciario);
+    ;
+    color: var(--color-secundario);
+    border-radius: 24px;
+    width: 336px;
+    height: 67px;
+    border: solid 1px var(--color-secundario);
+
+}
+
+.encriptador button:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+}
+
+
+.condicion {
+    margin-top: 33%;
+    margin-left: 20%;
+    /* Ajusta este valor según sea necesario */
+    display: flex;
+    color: #495057;
+    gap: 5px;
+}
+
+.condicion p {
+    font-size: 12px;
+    font-family: var(--fuente-inter);
+}
+
+
+
+.footer {
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
