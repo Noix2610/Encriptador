@@ -8,7 +8,7 @@
 
     --color-footer_primario: #0A3871;
     --color-footer_secundario: #125fbd;
-    
+
     --fuente-inter: 'Inter', sans-serif;
 }
 
@@ -35,6 +35,7 @@ p {
 .container {
     align-items: center;
     margin-top: 20px;
+    width: auto;
 }
 
 .texto__encriptador {
@@ -102,8 +103,10 @@ textarea.input::placeholder {
 }
 
 .salida {
-    width: 400px;
-    min-width: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
     height: 700px;
     overflow: hidden;
     background-color: white;
@@ -111,11 +114,12 @@ textarea.input::placeholder {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 50px;
+
 
 }
 
 #output {
+    width: auto;
     height: 100%;
     background-color: white;
     outline: none;
@@ -137,12 +141,10 @@ textarea.input::placeholder {
 }
 
 #output img {
-    width: auto;
+    width: 100%;
     height: auto;
-    max-width: 336px;
     height: 304px;
-    
-    margin: 50% 0% 0% 0%;
+    margin: 40% 0% 0% 0%;
 }
 
 .texto__explicativo1 {
@@ -195,11 +197,10 @@ textarea.input::placeholder {
     color: #b7babe;
 }
 
+
 @media(max-width: 768px) {
 
-    body {
-        align-items: center;
-    }
+    
 
     #output img {
         display: none;
@@ -211,9 +212,8 @@ textarea.input::placeholder {
     }
 
     .salida {
-        width: 100%;
-        height: auto;
         margin-top: 5%;
+        height: 100%;
         /* Añade espacio por encima del output */
     }
 
@@ -247,6 +247,7 @@ textarea.input::placeholder {
     }
 
     .salida {
-        margin-top: 5%;
+        margin: 5%;
+        height: 100%;
     }
 }
