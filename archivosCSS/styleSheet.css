@@ -5,6 +5,9 @@
     --color-secundario: #0A3871;
     --color-terciario: #D8DFE8;
     --color-texto: #495057;
+
+    --color-footer_primario: #4CAF50; /* Verde suave */
+    --color-footer_secundario: #AED581; /* Verde claro */
     /* --color-hover: #272727; */
 
     --fuente-inter: 'Inter', sans-serif;
@@ -175,6 +178,13 @@ textarea.input::placeholder {
 .copy button:hover {
     background-color: var(--color-secundario);
     color: white;
+}
+
+.footer{
+    background: linear-gradient(var(--color-footer_primario), var(--color-footer_secundario));
+    text-align: center;
+    color: #313438;
+    margin-top: 1%;
 }
 
 @media(max-width: 768px) {
